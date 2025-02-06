@@ -1,5 +1,5 @@
 import express from "express";
-import router from "./routes/api";
+import authRouter from "./routes/api";
 import db from "./utils/db";
 
 async function init() {
@@ -12,7 +12,7 @@ async function init() {
     const PORT = 3000;
 
     app.use(express.json());
-    app.use("/api", router);
+    app.use("/api/auth", authRouter);
 
     app.listen(PORT, () => {
       console.log("Server is running on http://localhost:3000");
