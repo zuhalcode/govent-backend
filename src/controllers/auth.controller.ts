@@ -152,6 +152,7 @@ export default {
   async activation(req: Request, res: Response) {
     try {
       const { code } = req.body as { code: string };
+
       const user = await UserModel.findOneAndUpdate(
         {
           activationCode: code,
