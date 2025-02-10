@@ -20,10 +20,12 @@ Thumbs.db
 # Directory for the build output
 dist/
 build/
+functions/
 
 # Temporary files
 .vscode/
 .idea/
+
 
 # NPM package-lock files (optional, only if you want to ignore lock files)
 package-lock.json
@@ -35,3 +37,6 @@ coverage/
 # Optional directories
 *.tgz
 *.bak
+
+# Netlify
+.netlify
