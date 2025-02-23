@@ -69,7 +69,7 @@ export default {
         password,
       });
 
-      res.status(200).json({
+      return res.status(200).json({
         message: "Registration Success",
         data: user,
       });

@@ -16,3 +16,5 @@ export const EMAIL_SMTP_SERVICE_NAME: string =
 
 export const CLIENT_HOST: string =
   process.env.CLIENT_HOST || "http://localhost:3001";
+
+export const RESEND_API_KEY: string = process.env.RESEND_API_KEY || "";
