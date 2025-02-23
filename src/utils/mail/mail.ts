@@ -1,16 +1,7 @@
-import nodemailer from "nodemailer";
 import ejs from "ejs";
 import path from "path";
 
-import {
-  EMAIL_SMTP_HOST,
-  EMAIL_SMTP_PASS,
-  EMAIL_SMTP_PORT,
-  EMAIL_SMTP_SERVICE_NAME,
-  EMAIL_SMTP_USER,
-  RESEND_API_KEY,
-  SMTP_SECURE,
-} from "../env";
+import { RESEND_API_KEY } from "../env";
 import { Resend } from "resend";
 
 export interface ISendEmail {
